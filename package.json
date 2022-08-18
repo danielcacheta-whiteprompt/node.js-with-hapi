@@ -1,0 +1,27 @@
+{
+  "name": "node.js-with-hapi",
+  "version": "1.0.0",
+  "description": "Node.js example with Hapi",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcacheta-whiteprompt/node.js-with-hapi.git"
+  },
+  "keywords": [
+    "node.js",
+    "hapi"
+  ],
+  "author": "Daniel Cacheta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielcacheta-whiteprompt/node.js-with-hapi/issues"
+  },
+  "homepage": "https://github.com/danielcacheta-whiteprompt/node.js-with-hapi#readme",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2"
+  }
+}
