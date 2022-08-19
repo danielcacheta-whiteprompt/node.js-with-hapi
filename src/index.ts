@@ -52,6 +52,24 @@ const init = async () => {
     }
   });
 
+  exampleServer.route({
+    method: 'GET',
+    path: '/fail',
+    handler: (request, h) => {
+      const name = request.query.name ?? 'stranger';
+      return {"name": name};
+    },
+    options: {
+      response: {
+        schema: Joi.object({
+          id: Joi.number().required(),
+          name: Joi.string().required()
+        }),
+        failAction: 'log'
+      }
+    }
+  });
+
   await exampleServer.start();
   console.log('Server running on %s', exampleServer.info.uri);
 };
