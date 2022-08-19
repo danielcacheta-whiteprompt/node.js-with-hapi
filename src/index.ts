@@ -1,3 +1,4 @@
+import Joi from 'joi';
 import { server } from '@hapi/hapi';
 import SignUp from './SignUp';
 
@@ -40,6 +41,14 @@ const init = async () => {
     handler: (request, h) => {
       const payload = request.payload as SignUp;
       return `Welcome ${payload.username}!`;
+    },
+    options: {
+      validate: {
+        payload: Joi.object({
+          username: Joi.string().required(),
+          password: Joi.string().min(5).required()
+        })
+      }
     }
   });
 

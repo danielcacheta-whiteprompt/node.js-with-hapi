@@ -1,6 +1,7 @@
 export default class SignUp {
 
-  constructor(readonly username: string){
+  constructor(readonly username: string, readonly password: string){
     this.username = username;
+    this.password = password;
   }
 }

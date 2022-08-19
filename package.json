@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/danielcacheta-whiteprompt/node.js-with-hapi#readme",
   "dependencies": {
-    "@hapi/hapi": "^20.2.2"
+    "@hapi/hapi": "^20.2.2",
+    "joi": "^17.6.0"
   },
   "devDependencies": {
     "@types/hapi": "^18.0.7",
